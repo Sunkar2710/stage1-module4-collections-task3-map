@@ -8,7 +8,7 @@ public class WordRepetitionMapCreator {
         HashMap<String, Integer> hashMap = new HashMap<>();
 
         if (!sentence.isEmpty()) {
-            String[] words = sentence.split("([\\s,\\.]+)");
+            String[] words = sentence.split("([\\s,.]+)");
 
             for (String word : words) {
                 Integer temp = hashMap.get(word.toLowerCase());
